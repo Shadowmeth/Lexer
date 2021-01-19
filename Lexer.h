@@ -47,7 +47,7 @@ private:
 public:
     Lexer(const std::string& source);
     std::string get_token_repr(void) const { return Token.repr; }
-    int get_token_class(void) { return Token.token_class; }
+    int get_token_class(void) const { return Token.token_class; }
     void next_char(void) { input_char = input[++dot]; }
     void start_lex(void);
     void get_next_token(void);
